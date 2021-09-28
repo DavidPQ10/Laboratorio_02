@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio 1 - Laboratorio 02</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            table.principal{
+                border-style: ridge;
+                border-color: cadetblue;
+            }
+            table tr.titulo td{
+                border-bottom-style: groove;
+                border-bottom-color: aquamarine;
+            }
+            table tr.boton td{
+                border-top-style: groove;
+                border-top-color: aquamarine;
+            }
+            tr.titulo{
+                background-color: white;
+                font-weight: bold;
+            }
+            tr.contenido{
+                background-color: white;
+            }
+            tr.subtitulos{
+                background-color: white;
+            }
+            tr.boton{
+                background-color: white;
+            }
+            tr.comment{
+                background-color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <table class="principal">
+            <tr>
+                <td>
+                    <table>
+                        <tr class="titulo">
+                            <td colspan="13" align="center">Formulario</td>
+                        </tr>
+                        <tr class="subtitulos">
+                            <td colspan="13" align="left">Introduce los terminos de búsqueda</td>
+                        </tr>
+                        <tr class="contenido">
+                            <td></td>
+                            <td colspan="2" align="Center">OBRA</td>
+                            <td colspan = "2" align="Center">TIPO</td>
+                            <td coslpan="2" align="Center">DISPONIBILIDAD</td>
+                            <td colspan = "2" align="Center">ESTILO</td>
+                        </tr>
+                        <tr class="contenido">
+                            <td></td>
+                            <td colspan = "2" align="center">Titutlo <input type="text" name="titulo" align="left"/></td>
+                            <td colspan = "2">
+                                <input type="checkbox" name="Tipo" id="esc"/> Escultura
+                            </td>
+                            <td colspan = "2">
+                                <input type="radio" name="disp" id="publ"/>Acceso Público
+                            </td>
+                            <td>
+                                <select id="estilo">
+                                    <option value="clas">Clásico</option>
+                                    <option value="abs">Abstracto</option>
+                                    <option value="surr">Surrealista</option>
+                                    <option value="otro">Otros</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr class="contenido">
+                            <td></td>
+                            <td colspan = "2" align="center">Autor <input type="text" name="autor" align="left"/></td>
+                            <td colspan = "2">
+                                <input type="checkbox" name="Tipo" id="arq"/> Arquitectura
+                            </td>
+                            <td colspan = "2">
+                                <input type="radio" name="disp" id="priv"/>Acceso Privado
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr class="contenido">
+                            <td><br></td>
+                            <td colspan = "2" align="center"><br></td>
+                            <td colspan = "2">
+                                <input type="checkbox" name="Tipo" id="pint"/> Pintura
+                            </td>
+                            <td colspan = "2" align="center"><br></td>
+                            <td></td>
+                        </tr>
+                        <tr class="contenido">
+                            <td colspan="9"><br></td>
+                        </tr>
+                        <tr class="contenido">
+                            <td colspan="9"><br></td>
+                        </tr>
+                        <tr class="comment">
+                            <td colspan="1" align ="left">
+                                Haganos saber sus sugerencias: 
+                            </td>
+                            <td colspan = "12" align="left">
+                                <textarea name="comentarios" rows="4" cols="40" placeholder="Yo opino que..."></textarea>
+                            </td>
+                        </tr>
+                        <tr class="boton"><td colspan="9" align="Center"><input type='submit' value='Enviar'></tr></tr>
+        </table>
+    </td>
+</tr>
+</table>
+</body>
+</html>
